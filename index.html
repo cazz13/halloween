@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scary Halloween Party</title>
+    <link rel="stylesheet" href="./style/halloween.css">
+    <script src="./javascript/halloween.js"></script>
+</head>
+<body onload="sonar('cancion')">
+    <!-- este ejercicio es solo para PCs-->
+    <audio id="cancion" controls autoplay>
+        <source src="./sounds/piano-scary-hallowen.mp3" type="audio/mpeg">
+    </audio>
+
+    <audio id="murcielago">
+        <source src="./sounds/bats.mp3" type="audio/mp3">
+    </audio>
+    <div id="container">
+        <div id="p1"><p>Scary Halloween Party</p></div>
+        <div id="p2"><p>DON'T TOUCH THE PUMPKIN</p></div>
+        <div id="calabaza" onmouseover="mostrar('bats');sonar('murcielago')" onmouseout="ocultar('bats');pausar('murcielago')">
+        <!--esto es para marcar la zona de la calabaza que se activa-->
+        </div>
+        <img id= "bats" src="/images/bat.gif" alt="">
+    </div>
+</body>
+</html>

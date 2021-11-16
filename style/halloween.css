@@ -1,0 +1,41 @@
+/********** HOJA DE ESTILO DEL EJERCICIO DE HALLOWEEN*********/
+/********** 2ºSMR - CURSO 2021/2022 *************************/
+/********** AUTOR: ALVARO RAMOS GRANADO ********************/
+
+body {background-color:#312179;}
+#container {position: relative;
+            width:1531px ;
+            height: 980px;
+            background-image: url(../images/halloween-festivity-background-free-vector.jpg);
+            margin: 100px auto;
+            font-family: halloween1;
+            
+            }
+#p1 {
+    font-size: 5em;
+    padding: 15px;
+    text-shadow: 5px 5px 5px orangered;
+    text-align: center;
+}
+
+#p2 {font-size:3em ;
+    text-align: center;}
+
+#calabaza {
+            position: absolute;
+            left: 950px;
+            top: 700px;
+        
+            width: 200px;
+            height: 200px;}
+#bats {position: absolute;
+        left: 875px;
+        top: 710px;
+        width: 25%;
+        visibility: hidden;}
+
+
+@font-face {
+    font-family:halloween1;
+    src: url(../fonts/Spiderfingers.ttf);
+}
